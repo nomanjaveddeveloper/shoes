@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>STRYDE – Premium Footwear</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet"/>
+  
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#">STRYDE<span>.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#brands-section">Brands</a></li>
+        <li class="nav-item"><a class="nav-link" href="#offer">Sale</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" class="nav-link" style="font-size:1rem;"><i class="far fa-heart"></i></a>
+        <a href="#" class="nav-link cart-btn">
+          <i class="fas fa-shopping-bag"></i> Cart
+          <span class="cart-badge" id="cartCount">3</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-text">STRYDE</div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="hero-badge fade-up">
+          <span>●</span> NEW COLLECTION 2025
+        </div>
+        <h1 class="fade-up fade-up-delay-1">
+          STEP INTO
+          <em>GREATNESS</em>
+        </h1>
+        <p class="hero-sub fade-up fade-up-delay-2">
+          Discover premium footwear crafted for those who refuse to compromise. From iconic streetwear to athletic excellence — every step, legendary.
+        </p>
+        <div class="hero-cta fade-up fade-up-delay-3">
+          <a href="#products" class="btn-primary-custom">
+            Shop Now <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#categories" class="btn-outline-custom">
+            Explore <i class="fas fa-compass"></i>
+          </a>
+        </div>
+        <div class="hero-stats fade-up">
+          <div>
+            <div class="stat-num">50<span>K+</span></div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+          <div>
+            <div class="stat-num">200<span>+</span></div>
+            <div class="stat-label">Shoe Models</div>
+          </div>
+          <div>
+            <div class="stat-num">15<span>+</span></div>
+            <div class="stat-label">Global Brands</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero-visual">
+          <div class="shoe-3d-container">
+            <div class="shoe-platform">
+              <span class="shoe-emoji" id="heroShoe">👟</span>
+            </div>
+          </div>
+          <div class="floating-tag tag-1">
+            <div style="font-size:0.65rem;letter-spacing:1px;color:var(--gray);text-transform:uppercase;margin-bottom:2px;">Rating</div>
+            <div style="display:flex;align-items:center;gap:4px;"><span class="tag-accent">★★★★★</span> <strong>4.9</strong></div>
+          </div>
+          <div class="floating-tag tag-2">
+            <div style="font-size:0.65rem;letter-spacing:1px;color:var(--gray);text-transform:uppercase;margin-bottom:2px;">Free Delivery</div>
+            <div style="font-weight:700;color:var(--dark);">On Orders $50+</div>
+          </div>
+          <div class="floating-tag tag-3">
+            <div style="font-weight:700;font-size:1.1rem;color:var(--accent);">-30% OFF</div>
+            <div style="font-size:0.7rem;color:var(--gray);">New Arrivals</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="marquee-item">Nike <span>✦</span></span>
+    <span class="marquee-item">Adidas <span>✦</span></span>
+    <span class="marquee-item">Jordan <span>✦</span></span>
+    <span class="marquee-item">Puma <span>✦</span></span>
+    <span class="marquee-item">New Balance <span>✦</span></span>
+    <span class="marquee-item">Reebok <span>✦</span></span>
+    <span class="marquee-item">Converse <span>✦</span></span>
+    <span class="marquee-item">Vans <span>✦</span></span>
+    <span class="marquee-item">Under Armour <span>✦</span></span>
+    <span class="marquee-item">Asics <span>✦</span></span>
+    <span class="marquee-item">Skechers <span>✦</span></span>
+    <span class="marquee-item">Fila <span>✦</span></span>
+    <!-- Duplicate for seamless scroll -->
+    <span class="marquee-item">Nike <span>✦</span></span>
+    <span class="marquee-item">Adidas <span>✦</span></span>
+    <span class="marquee-item">Jordan <span>✦</span></span>
+    <span class="marquee-item">Puma <span>✦</span></span>
+    <span class="marquee-item">New Balance <span>✦</span></span>
+    <span class="marquee-item">Reebok <span>✦</span></span>
+    <span class="marquee-item">Converse <span>✦</span></span>
+    <span class="marquee-item">Vans <span>✦</span></span>
+    <span class="marquee-item">Under Armour <span>✦</span></span>
+    <span class="marquee-item">Asics <span>✦</span></span>
+    <span class="marquee-item">Skechers <span>✦</span></span>
+    <span class="marquee-item">Fila <span>✦</span></span>
+  </div>
+</div>
+
+<!-- BRANDS FILTER + PRODUCTS -->
+<section class="brands-section" id="products">
+  <div class="container">
+    <div class="section-header text-center fade-up">
+      <div class="section-eyebrow">Our Collection</div>
+      <h2 class="section-title">FEATURED <span>KICKS</span></h2>
+      <p class="section-sub mx-auto">Handpicked from the world's most iconic brands, curated for the modern sneakerhead.</p>
+    </div>
+    <div class="brand-filter fade-up" id="brandFilter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nike">Nike</button>
+      <button class="filter-btn" data-filter="adidas">Adidas</button>
+      <button class="filter-btn" data-filter="jordan">Jordan</button>
+      <button class="filter-btn" data-filter="puma">Puma</button>
+      <button class="filter-btn" data-filter="newbalance">New Balance</button>
+      <button class="filter-btn" data-filter="converse">Converse</button>
+      <button class="filter-btn" data-filter="vans">Vans</button>
+    </div>
+  </div>
+</section>
+
+<section class="products-section">
+  <div class="container">
+    <div class="row g-4" id="productsGrid">
+      <!-- Cards generated by JS -->
+    </div>
+    <div class="text-center mt-5">
+      <button class="btn-outline-custom" id="loadMoreBtn">
+        Load More <i class="fas fa-arrow-down"></i>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories-section" id="categories">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-eyebrow">Browse By Type</div>
+      <h2 class="section-title">SHOP BY <span>CATEGORY</span></h2>
+      <p class="section-sub">Whether you're running, training, or just styling — we have the perfect pair for every occasion.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 col-sm-6 fade-up">
+        <div class="cat-card cat-1">
+          <div class="cat-inner">
+            <span class="cat-img">👟</span>
+            <div class="cat-name">SNEAKERS</div>
+            <div class="cat-count">142 Products</div>
+            <div class="cat-arrow"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 fade-up fade-up-delay-1">
+        <div class="cat-card cat-2">
+          <div class="cat-inner">
+            <span class="cat-img">🏃</span>
+            <div class="cat-name">RUNNING</div>
+            <div class="cat-count">89 Products</div>
+            <div class="cat-arrow"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 fade-up fade-up-delay-2">
+        <div class="cat-card cat-3">
+          <div class="cat-inner">
+            <span class="cat-img">⚽</span>
+            <div class="cat-name">SPORTS</div>
+            <div class="cat-count">67 Products</div>
+            <div class="cat-arrow"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 fade-up">
+        <div class="cat-card cat-4">
+          <div class="cat-inner">
+            <span class="cat-img">👠</span>
+            <div class="cat-name">HEELS</div>
+            <div class="cat-count">53 Products</div>
+            <div class="cat-arrow"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 fade-up fade-up-delay-1">
+        <div class="cat-card cat-5">
+          <div class="cat-inner">
+            <span class="cat-img">🥾</span>
+            <div class="cat-name">BOOTS</div>
+            <div class="cat-count">74 Products</div>
+            <div class="cat-arrow"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 fade-up fade-up-delay-2">
+        <div class="cat-card cat-6">
+          <div class="cat-inner">
+            <span class="cat-img">🩴</span>
+            <div class="cat-name">SANDALS</div>
+            <div class="cat-count">38 Products</div>
+            <div class="cat-arrow"><i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRAND LOGOS -->
+<section class="brands-logo-section" id="brands-section">
+  <div class="container">
+    <div class="section-header text-center fade-up">
+      <div class="section-eyebrow">Official Partners</div>
+      <h2 class="section-title">TRUSTED <span>BRANDS</span></h2>
+    </div>
+    <div class="row g-3">
+      <div class="col-6 col-md-3 col-lg-2 fade-up"><div class="brand-logo-card"><div class="brand-logo-text">NIKE</div></div></div>
+      <div class="col-6 col-md-3 col-lg-2 fade-up fade-up-delay-1"><div class="brand-logo-card"><div class="brand-logo-text">ADIDAS</div></div></div>
+      <div class="col-6 col-md-3 col-lg-2 fade-up fade-up-delay-2"><div class="brand-logo-card"><div class="brand-logo-text">JORDAN</div></div></div>
+      <div class="col-6 col-md-3 col-lg-2 fade-up"><div class="brand-logo-card"><div class="brand-logo-text">PUMA</div></div></div>
+      <div class="col-6 col-md-3 col-lg-2 fade-up fade-up-delay-1"><div class="brand-logo-card"><div class="brand-logo-text">VANS</div></div></div>
+      <div class="col-6 col-md-3 col-lg-2 fade-up fade-up-delay-2"><div class="brand-logo-card"><div class="brand-logo-text">REEBOK</div></div></div>
+      <div class="col-6 col-md-3 col-lg-2 fade-up"><div class="brand-logo-card" style="display:flex;flex-direction:column;gap:0;"><div class="brand-logo-text" style="font-size:1.1rem;letter-spacing:2px;">NEW</div><div class="brand-logo-text" style="font-size:1.1rem;letter-spacing:2px;">BALANCE</div></div></div>
+      <div class="col-6 col-md-3 col-lg-2 fade-up fade-up-delay-1"><div class="brand-logo-card"><div class="brand-logo-text" style="font-size:1.2rem;">CONVERSE</div></div></div>
+      <div class="col-6 col-md-3 col-lg-2 fade-up fade-up-delay-2"><div class="brand-logo-card"><div class="brand-logo-text" style="font-size:1rem;">UNDER ARMOUR</div></div></div>
+      <div class="col-6 col-md-3 col-lg-2 fade-up"><div class="brand-logo-card"><div class="brand-logo-text">ASICS</div></div></div>
+      <div class="col-6 col-md-3 col-lg-2 fade-up fade-up-delay-1"><div class="brand-logo-card"><div class="brand-logo-text">FILA</div></div></div>
+      <div class="col-6 col-md-3 col-lg-2 fade-up fade-up-delay-2"><div class="brand-logo-card"><div class="brand-logo-text" style="font-size:1.2rem;">SKECHERS</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section">
+  <div class="container">
+    <div class="section-header text-center fade-up">
+      <div class="section-eyebrow">Why Choose Us</div>
+      <h2 class="section-title">THE STRYDE <span>DIFFERENCE</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3 fade-up">
+        <div class="feature-card">
+          <div class="feature-icon red">🚀</div>
+          <div class="feature-title">Express Delivery</div>
+          <div class="feature-text">Same-day delivery available in major cities. Get your kicks at your door within hours.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 fade-up fade-up-delay-1">
+        <div class="feature-card">
+          <div class="feature-icon orange">🏆</div>
+          <div class="feature-title">100% Authentic</div>
+          <div class="feature-text">Every pair is certified authentic. We source directly from brand-authorized distributors.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 fade-up fade-up-delay-2">
+        <div class="feature-card">
+          <div class="feature-icon green">↩️</div>
+          <div class="feature-title">Easy Returns</div>
+          <div class="feature-text">30-day hassle-free returns. Not happy? Return it free. No questions asked.</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 fade-up fade-up-delay-3">
+        <div class="feature-card">
+          <div class="feature-icon blue">💎</div>
+          <div class="feature-title">Premium Quality</div>
+          <div class="feature-text">Only the finest materials. Built to last. Comfort and durability in every step.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SALE OFFER SECTION -->
+<section class="offer-section" id="offer">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="section-eyebrow">Limited Time Offer</div>
+        <h2>MEGA <span>SUMMER</span> SALE</h2>
+        <p class="offer-sub">Don't miss out on the biggest footwear sale of the year. Up to 50% off on selected brands and styles. Offer ends soon!</p>
+        <div class="timer-wrap" id="countdown">
+          <div class="timer-box"><span class="timer-num" id="days">02</span><div class="timer-label">Days</div></div>
+          <div class="timer-box"><span class="timer-num" id="hours">14</span><div class="timer-label">Hours</div></div>
+          <div class="timer-box"><span class="timer-num" id="minutes">35</span><div class="timer-label">Mins</div></div>
+          <div class="timer-box"><span class="timer-num" id="seconds">00</span><div class="timer-label">Secs</div></div>
+        </div>
+        <a href="#products" class="btn-primary-custom">
+          Grab the Deal <i class="fas fa-fire"></i>
+        </a>
+      </div>
+      <div class="col-lg-6 text-center position-relative" style="padding:40px 0;">
+        <span class="offer-shoe">👟</span>
+        <div class="offer-price-tag">
+          <span class="off">UP TO</span>
+          <span class="pct">50%</span>
+          <span class="off">OFF</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-header text-center fade-up">
+      <div class="section-eyebrow">What People Say</div>
+      <h2 class="section-title">CUSTOMER <span>LOVE</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4 fade-up">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"The Air Max 270s I ordered arrived in less than 24 hours. The packaging was beautiful and the shoes are absolutely legit. STRYDE has earned a customer for life!"</p>
+          <div class="testimonial-user">
+            <div class="user-avatar">👨</div>
+            <div><div class="user-name">Ahmed Raza</div><div class="user-role">Sneaker Collector, Lahore</div></div>
+          </div>
+          <div class="stars mt-3">★★★★★</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 fade-up fade-up-delay-1">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Best online shoe store in Pakistan. I was skeptical at first but the Jordans I got are 100% authentic. The size guide is also super accurate!"</p>
+          <div class="testimonial-user">
+            <div class="user-avatar">👩</div>
+            <div><div class="user-name">Sara Khan</div><div class="user-role">Fashion Blogger, Karachi</div></div>
+          </div>
+          <div class="stars mt-3">★★★★★</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 fade-up fade-up-delay-2">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Bought Adidas Ultraboost for my daily runs. The comfort is unbelievable. Delivery was fast and customer support helped me pick the right size. Highly recommend!"</p>
+          <div class="testimonial-user">
+            <div class="user-avatar">👨‍💼</div>
+            <div><div class="user-name">Usman Ali</div><div class="user-role">Marathon Runner, Islamabad</div></div>
+          </div>
+          <div class="stars mt-3">★★★★★</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 fade-up">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"I've ordered 5 times now and every experience has been flawless. The return policy saved me once when the size was slightly off. No hassle at all!"</p>
+          <div class="testimonial-user">
+            <div class="user-avatar">👩‍🎓</div>
+            <div><div class="user-name">Ayesha Malik</div><div class="user-role">Student, Faisalabad</div></div>
+          </div>
+          <div class="stars mt-3">★★★★★</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 fade-up fade-up-delay-1">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"The Nike Dunks are exactly what I wanted. Great price, fast shipping, and the 3D previews on the website actually match what you get. Love this store!"</p>
+          <div class="testimonial-user">
+            <div class="user-avatar">👦</div>
+            <div><div class="user-name">Bilal Hassan</div><div class="user-role">Sneakerhead, Multan</div></div>
+          </div>
+          <div class="stars mt-3">★★★★★</div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 fade-up fade-up-delay-2">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Got Puma RS-X for my sister's birthday. She loved them! Great gift-wrapping option and the shoes came in perfect condition. Will definitely order again."</p>
+          <div class="testimonial-user">
+            <div class="user-avatar">👨‍👧</div>
+            <div><div class="user-name">Kamran Siddiqui</div><div class="user-role">Entrepreneur, Rawalpindi</div></div>
+          </div>
+          <div class="stars mt-3">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / ORDER FORM -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="form-wrap fade-up">
+          <div class="text-center mb-5">
+            <div class="section-eyebrow">Get In Touch</div>
+            <h2 class="form-title">ORDER OR <span>INQUIRE</span></h2>
+            <p class="form-sub mx-auto">Have a question or want to place a custom order? Fill out the form below and our team will get back to you within 24 hours.</p>
+          </div>
+
+          <div id="orderForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="custom-input" id="fname" placeholder="First Name *" />
+                <div class="input-error" id="fname-error">Please enter your first name</div>
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="custom-input" id="lname" placeholder="Last Name *" />
+                <div class="input-error" id="lname-error">Please enter your last name</div>
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="custom-input" id="email" placeholder="Email Address *" />
+                <div class="input-error" id="email-error">Please enter a valid email</div>
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="custom-input" id="phone" placeholder="Phone Number *" />
+                <div class="input-error" id="phone-error">Please enter a valid phone number</div>
+              </div>
+              <div class="col-12">
+                <select class="custom-input custom-select" id="brand">
+                  <option value="">Select Brand *</option>
+                  <option>Nike</option>
+                  <option>Adidas</option>
+                  <option>Jordan</option>
+                  <option>Puma</option>
+                  <option>New Balance</option>
+                  <option>Reebok</option>
+                  <option>Converse</option>
+                  <option>Vans</option>
+                  <option>Under Armour</option>
+                  <option>Asics</option>
+                  <option>Other</option>
+                </select>
+                <div class="input-error" id="brand-error">Please select a brand</div>
+              </div>
+              <div class="col-md-6">
+                <select class="custom-input custom-select" id="shoeSize">
+                  <option value="">Shoe Size *</option>
+                  <option>UK 5 / US 6</option>
+                  <option>UK 6 / US 7</option>
+                  <option>UK 7 / US 8</option>
+                  <option>UK 8 / US 9</option>
+                  <option>UK 9 / US 10</option>
+                  <option>UK 10 / US 11</option>
+                  <option>UK 11 / US 12</option>
+                  <option>UK 12 / US 13</option>
+                </select>
+                <div class="input-error" id="size-error">Please select a size</div>
+              </div>
+              <div class="col-md-6">
+                <select class="custom-input custom-select" id="budget">
+                  <option value="">Budget Range *</option>
+                  <option>$50 – $100</option>
+                  <option>$100 – $200</option>
+                  <option>$200 – $350</option>
+                  <option>$350 – $500</option>
+                  <option>$500+</option>
+                </select>
+                <div class="input-error" id="budget-error">Please select your budget</div>
+              </div>
+              <div class="col-12">
+                <div style="font-size:0.8rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--gray);margin-bottom:12px;">Interested In</div>
+                <div class="checkbox-group">
+                  <label class="check-item"><input type="checkbox" value="men"> Men's Shoes</label>
+                  <label class="check-item"><input type="checkbox" value="women"> Women's Shoes</label>
+                  <label class="check-item"><input type="checkbox" value="kids"> Kids' Shoes</label>
+                  <label class="check-item"><input type="checkbox" value="limited"> Limited Editions</label>
+                  <label class="check-item"><input type="checkbox" value="sale"> Sale Items</label>
+                </div>
+                <div class="input-error" id="interest-error">Please select at least one interest</div>
+              </div>
+              <div class="col-12">
+                <textarea class="custom-input custom-textarea" id="message" placeholder="Tell us what you're looking for... (model, color, occasion, etc.)"></textarea>
+              </div>
+              <div class="col-12">
+                <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:24px;">
+                  <input type="checkbox" id="terms" style="margin-top:3px;accent-color:var(--accent);width:16px;height:16px;">
+                  <label for="terms" style="font-size:0.85rem;color:var(--gray);cursor:pointer;">
+                    I agree to the <a href="#" style="color:var(--accent);">Terms & Conditions</a> and <a href="#" style="color:var(--accent);">Privacy Policy</a> *
+                  </label>
+                </div>
+                <div class="input-error" id="terms-error">Please accept the terms and conditions</div>
+              </div>
+              <div class="col-12">
+                <button class="btn-primary-custom w-100" id="submitBtn" onclick="submitForm(event)" style="justify-content:center;border-radius:14px;font-size:0.9rem;">
+                  <i class="fas fa-paper-plane"></i> Send Inquiry
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">🎉</div>
+            <h3 style="font-family:var(--font-display);font-size:2rem;letter-spacing:1px;margin-bottom:12px;">Thank You!</h3>
+            <p style="color:var(--gray);font-size:0.95rem;line-height:1.7;">Your inquiry has been received. Our team will reach out within 24 hours to help you find the perfect pair.</p>
+            <button class="btn-outline-custom mt-4" onclick="resetForm()" style="margin:auto;">Submit Another <i class="fas fa-redo"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand">STRYDE<span>.</span></div>
+        <p class="footer-desc">Premium branded footwear for every step of your journey. Authentic. Stylish. Legendary.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="footer-title">Shop</div>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-chevron-right"></i> New Arrivals</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Best Sellers</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Sale</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Limited Edition</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Gift Cards</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="footer-title">Brands</div>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Nike</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Adidas</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Jordan</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Puma</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Vans</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="footer-title">Help</div>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Size Guide</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Track Order</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> Returns</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+          <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="footer-title">Contact</div>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</a></li>
+          <li><a href="tel:+923001234567"><i class="fas fa-phone"></i> +92 300 1234567</a></li>
+          <li><a href="mailto:hello@stryde.pk"><i class="fas fa-envelope"></i> hello@stryde.pk</a></li>
+          <li><a href="#"><i class="fas fa-clock"></i> Mon-Sat 10am-8pm</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 STRYDE. All rights reserved.</div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- PRODUCT DETAIL MODAL -->
+<div class="modal fade" id="productModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row align-items-center g-4">
+          <div class="col-md-5" style="background:var(--off-white);border-radius:20px;padding:30px;position:relative;">
+            <span class="modal-shoe" id="modalShoe">👟</span>
+            <div id="modalBadge" style="position:absolute;top:16px;left:16px;background:var(--accent);color:white;border-radius:8px;padding:4px 12px;font-size:0.7rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;"></div>
+          </div>
+          <div class="col-md-7">
+            <div style="font-size:0.7rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:8px;" id="modalBrand"></div>
+            <h4 class="modal-title" id="modalName"></h4>
+            <div style="display:flex;align-items:center;gap:8px;margin:12px 0;">
+              <span class="stars">★★★★★</span>
+              <span style="font-size:0.8rem;color:var(--gray);" id="modalRating"></span>
+            </div>
+            <div class="modal-price" id="modalPrice"></div>
+            <div style="color:var(--gray);text-decoration:line-through;font-size:0.85rem;" id="modalOldPrice"></div>
+            <p style="color:var(--gray);font-size:0.88rem;line-height:1.7;margin:16px 0;" id="modalDesc"></p>
+            <div style="font-size:0.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--mid);margin-bottom:12px;">Select Size</div>
+            <div class="size-grid" id="modalSizes"></div>
+            <div style="display:flex;gap:12px;margin-top:24px;">
+              <button class="btn-primary-custom" style="flex:1;justify-content:center;border-radius:14px;" onclick="addToCart()">
+                <i class="fas fa-shopping-bag"></i> Add to Bag
+              </button>
+              <button class="btn-outline-custom" style="border-radius:14px;padding:16px 20px;" onclick="wishlist()">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS + jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
